@@ -22,3 +22,46 @@
 ---
 
 ## 📂 Code Structure Overview
+
+
+/include
+├── video.asm ; Mode X init, pixel/line routines
+├── sprite.asm ; load/blit sprite frames & palette
+├── input.asm ; keyboard + mouse handling
+├── main.asm ; frame loop, gamestate management
+├── fighter.asm ; character routines, AI, hit detection
+├── audio.asm ; simple PC‑speaker / SB driver
+└── util.asm ; helper macros, timing, math routines
+
+---
+
+## ⚙️ Build & Run Instructions
+
+Requirements:
+DOSBox or real-mode DOS environment.
+Turbo Assembler & Turbo Linker.
+
+- run !complie.bat
+- run rush.exe
+
+---
+
+## 📊 Current Progress & TODOs
+
+✅ Frame engine & input loop
+✅ Sprite loading & basic blitting
+🚧 Fighting logic: punch/kick/hit/block
+🚧 SoundBlaster support
+🚧 X mode planes working properly
+🚧 2 thread input
+✅ Menus, character select, multiple fighters
+🚧 Final polish & high-score tracking
+
+---
+
+## ❤️ Credits & License
+
+Author: Erik Gelfat
+License: MIT – feel free to fork, experiment, and contribute back!
+Let me know if you'd like help setting up sound drivers, adding new stages, or optimizing your sprite routines. This README is designed to be informative, decorative, and supportive—ready to showcase your Assembly-level deep dive into retro graphics and gameplay!
+
